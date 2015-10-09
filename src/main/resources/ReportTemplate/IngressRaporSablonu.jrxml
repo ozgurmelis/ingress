@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ingressReportTemplate" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3d964da3-a13c-497c-8dc7-871db73f476d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="paramName" class="java.lang.String"/>
+	<parameter name="paramSurname" class="java.lang.String"/>
+	<parameter name="paramBarcode" class="java.lang.Object"/>
+	<parameter name="paramIngressID" class="java.lang.String"/>
+	<parameter name="paramAge" class="java.lang.Number"/>
+	<parameter name="paramGender" class="java.lang.String"/>
+	<parameter name="paramDate" class="java.lang.String"/>
+	<parameter name="paramCinsiyet" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="paramLogo" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[SELECT * FROM CITIZEN]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="ingressid" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="surname" class="java.lang.String"/>
+	<variable name="name_1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{name}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="27" y="51" width="540" height="44" forecolor="#003399" uuid="dd37bf65-57ba-42d1-95f0-4216ac1e751e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INGRESS PROJESİ KAPSAMINDA BİYOMETRİK VERİ ALIMINA İLİŞKİN
+ONAY FORMU]]></text>
+			</staticText>
+			<image>
+				<reportElement x="399" y="1" width="143" height="50" uuid="149c3564-1dde-422c-80db-bf803964baae"/>
+				<imageExpression><![CDATA[$P{paramLogo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="661" splitType="Stretch">
+			<staticText>
+				<reportElement x="27" y="184" width="499" height="255" uuid="5760ea7f-20e1-46cf-91bc-6a6b1d316aaa"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[TÜRKİYE BİLİMSEL VE TEKNOLOJİK ARAŞTIRMA KURUMU (TÜBİTAK)’I INGRESS Projesi kapsamında biyometrik verim olan parmak izimi toplamak ve kullanmak hususunda yetkilendirdiğimi kabul ve taahhüt ederim. Alınan parmak izlerimin kullanım öncesinde anonim (isimsiz) hale getirileceği ve sonrasında yalnızca bilimsel araştırma amaçlı olarak kullanılacağı hususlarını kabul ederim.
+
+Tarafıma ait olan söz konusu biyometrik veriler yukarıda belirtilen projede mevcut diğer proje ortakları ile paylaşılabilecek ve Projenin sona ermesinden itibaren 1 (bir) yıllık süre sonunda imha edilecektir. Proje ortakları için toplanmış olan verinin kullanımı INGRESS Projesi ile ilgili araştırma faaliyetleri ile sınırlıdır.
+
+Türkiye Cumhuriyeti Anayasası’ nın 20. Maddesi hükmü uyarınca, tarafıma ait biyometrik verilerin toplanması ve söz konusu verilerin INGRESS Projesi için TÜBITAK tarafından kullanımı hususunda tamamen bilgilendirilmiş olduğumu ve bu doğrultuda yapılacak işlemlere onay verdiğimi kabul, beyan ve taahhüt ederim.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="364" y="487" width="162" height="73" uuid="7ee19e12-ac3b-41d1-a93c-9fcfd504ca25"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="310" y="592" width="215" height="20" uuid="18be6bcd-2e07-4de3-9560-1700a56eb150"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Ad Soyad: .......................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="622" width="65" height="20" uuid="7304ef81-9490-4a83-918c-d60ab908652b"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Tarih: ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="343" y="40" width="87" height="20" uuid="87617f45-b87d-476f-8750-7d0bcaeaadb1"/>
+				<imageExpression><![CDATA[$P{paramBarcode}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="343" y="60" width="117" height="20" uuid="f6097f9f-9637-4d59-897f-56f96e2bf832"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramIngressID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="164" width="461" height="20" uuid="e9d2f73c-fa0e-460a-80dc-996897edd55c"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramName}+ " " +$P{paramSurname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="27" y="164" width="37" height="20" uuid="86175d66-1c85-422e-bd42-3164c87897c7"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[Ben, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="60" width="63" height="18" uuid="75ff5396-1342-4402-92ea-4b155dcc065f"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cinsiyet:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="40" width="229" height="20" uuid="8ff66330-97f5-4c16-87f9-1d35ef1dc548"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramSurname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="27" y="40" width="63" height="20" uuid="8d19ee21-9077-48b7-b297-838d4f564bd8"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Soyad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="20" width="229" height="20" uuid="d3a26a39-3d05-48e9-ad43-b100432a53be"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="27" y="20" width="63" height="20" uuid="c38cfec2-e412-4a2c-a6c2-770c49d1925f"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="78" width="229" height="20" uuid="cd3fa4a8-028b-49b4-bfca-6fb973166c96"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramAge}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="27" y="78" width="63" height="20" uuid="ddd2b3dc-273a-43c6-8b4a-50ec36faf0ab"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Yaş:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="375" y="622" width="150" height="20" uuid="a180d4a5-57f9-4a02-8c99-5aed90ed583e"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="58" width="229" height="20" uuid="5e501d31-977d-4c0c-afc3-cdf540e8fe03"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paramCinsiyet}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="59" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

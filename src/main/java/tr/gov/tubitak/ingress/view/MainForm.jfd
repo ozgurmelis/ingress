@@ -1,0 +1,218 @@
+JFDML JFormDesigner: "5.1.3.0.158" Java: "1.6.0_65" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0, 0:1.0"
+			"$hGap": 5
+			"$vGap": 5
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			"resizable": false
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par l {seq {space :::p, par l {comp label8::l:p:58:p, par t:l {comp button2:::p::p, seq {par l {comp label9::l:p::p, comp label10::l:p::p}, space :p:54:p, par l {comp textField4:1::p:308:p, comp textField5:1::p:308:p, comp textField6:::p:76:p}}}, seq l {par l {seq l {comp label11:::p::p, space :p:68:p, comp radioButton2:::p::p}, seq l {comp label2:::p::p, space s:::p, comp radioButton7:::p::p}}, space s:::p, par l {comp radioButton8:::p::p, comp radioButton3:::p::p}}}}, seq l {space :p:18:p, comp textField1:::p:449:p}}, space ::20:x}}"
+					"$verticalGroup": "par l {seq l {space :::p, par b {comp label8::b:p:28:p, comp textField4:2:b:p:22:p}, space :::p, par b {comp label9::b:p::p, comp textField5:2:b:p:18:p}, space :::p, par l {seq l {par l {comp label10:::p::p, comp textField6:2::p:28:p}, space :p:18:p, par l {comp label11:::p::p, par b {comp radioButton3::b:p::p, comp radioButton2::b:p::p}}, space s:::p, par b {comp label2::b:p::p, comp radioButton7::b:p::p, comp radioButton8::b:p::p}, space ::175:x}, seq {space :0:149:x, comp button2:::p::p, space :p:108:p}}, comp textField1:::p::p, space :p:25:p}}"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "Surname"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "Age"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "Gender"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField4"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField5"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField6"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton2"
+						"text": "Female"
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton3"
+						"text": "Male"
+						"$buttonGroup": new FormReference( "buttonGroup1" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": "Add"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+						"text": "INFO"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Form Language"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton7"
+						"text": "Turkish"
+						"$buttonGroup": new FormReference( "buttonGroup4" )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton8"
+						"text": "English"
+						"$buttonGroup": new FormReference( "buttonGroup4" )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Add"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq {comp label13:::p:86:p, space :::p, comp textField7:::p:215:p, space u:::p, comp button3:::p::p}, par t:l {seq {par l {seq {comp label14:::p:58:p, space :p:35:p, comp textField8:5::p:308:p}, seq l {par l {comp label15::l:p::p, comp label16::l:p::p, comp label17::l:p::p}, space :p:39:p, par l {comp textField9:5::p:308:p, seq l {space :p:9:p, comp radioButton1:::p::p, space s:::p, comp radioButton4:::p::p}, comp textField10:::p:76:p}}, seq l {comp label1:::p::p, space :::p, comp radioButton5:::p::p, space :::p, comp radioButton6:::p::p}}, space :p:226:p}, par t:l {comp button4:::p::p, par t {comp button6::t:p:74:p, seq l {par l {seq {comp textField3:::p:345:p, space :::p}, seq t {comp button5:::p::p, space :p:15:p}}, comp button1:::p::p}}}}, comp textField2::l:p:463:p}, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :p:17:p, par b {comp label13::b:p::p, comp button3::b:p::p, comp textField7::b:p:32:p}, space s:::p, comp textField2:::p::p, space :p:18:p, par b {comp label14::b:p:28:p, comp textField8:6:b:p::p}, space :p:7:p, par t {comp label15:::p::p, comp textField9:6::p::p}, space :p:8:p, par b {comp label16::b:p::p, comp textField10::b:p::p}, space u:::p, par b {comp label17::b:p::p, comp radioButton4::b:p::p, comp radioButton1::b:p::p}, space u:::p, par b {comp label1::::25:x, comp radioButton5::b:p::p, comp radioButton6::b:p::p}, space :::p, par b {comp button5::b:p::p, comp button6::b:p::p}, space :::p, par b {comp textField3:6:b:p::p, comp button1::b:p::p}, space :p:13:p, comp button4:::p::p}}"
+				} ) {
+					name: "panel2"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+						"text": "INGRESS ID"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField7"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label14"
+						"text": "Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label15"
+						"text": "Surname"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label16"
+						"text": "Age"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label17"
+						"text": "Gender"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField8"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField9"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField10"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "Find"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"text": "Download"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button5"
+						"text": "Update"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button6"
+						"text": "Delete"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton1"
+						"text": "Female"
+						"$buttonGroup": new FormReference( "buttonGroup2" )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton4"
+						"text": "Male"
+						"$buttonGroup": new FormReference( "buttonGroup2" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField2"
+						"editable": false
+						"text": "INFO"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField3"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Browse"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Form Language"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton5"
+						"text": "Turkish"
+						"$buttonGroup": new FormReference( "buttonGroup3" )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "radioButton6"
+						"text": "English"
+						"$buttonGroup": new FormReference( "buttonGroup3" )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Find"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/ingressLogo.jpg" )
+				"horizontalAlignment": 0
+				"opaque": true
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 490, 585 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 130, 640 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup2"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 640 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup3"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 694 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup4"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 748 )
+		} )
+	}
+}
