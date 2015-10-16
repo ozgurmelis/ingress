@@ -118,7 +118,7 @@ INGRESS]]></text>
 				</textElement>
 				<text><![CDATA[Authorize TÜRKİYE BİLİMSEL VE TEKNOLOJİK ARAŞTIRMA KURUMU (TÜBİTAK) to collect and use my FINGERPRINT data. The acquisitions of my FINGERPRINT will be anonymized before any exploitation then utilized exclusively for scientific research purposes.
 
-These data could be transferred to other partners participating to the above mentioned Project and will be destroyed at the end of the Project plus one year. Communication of these data to any third parties is prohibited. For the project partners, use of the collected data is strictly limited to research activities related to INGRESS Project.
+These data could be accessible by other partners participating to the above mentioned Project and will be destroyed at the end of the Project plus one year. Communication of these data to any third parties is prohibited. For the project partners, use of the collected data is strictly limited to research activities related to INGRESS Project.
 
 In accordance with Article 20 of the Constitution of Republic of Turkey, I hereby declare that I give my fully informed consent regarding the acquisition of my biometric data and I understand and consent the usage of said data by TÜBİTAK for INGRESS Project.]]></text>
 			</staticText>
@@ -162,60 +162,32 @@ In accordance with Article 20 of the Constitution of Republic of Turkey, I hereb
 				<text><![CDATA[The original copy of this form is signed by the subject in Turkish.]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="102" y="60" width="229" height="20" uuid="8170a546-5345-4195-8972-c540dae78aea"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{paramGender}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="27" y="60" width="63" height="18" uuid="fc1aa921-c373-4435-b590-fed1179d2b67"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Gender:]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="102" y="40" width="229" height="20" uuid="141bb489-aaad-4e29-87de-f314bf5ba568"/>
+				<reportElement x="102" y="60" width="229" height="20" uuid="141bb489-aaad-4e29-87de-f314bf5ba568"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramSurname}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="27" y="40" width="63" height="20" uuid="5d922ea3-a1d3-4445-b49c-a979f772745e"/>
+				<reportElement x="27" y="60" width="63" height="20" uuid="5d922ea3-a1d3-4445-b49c-a979f772745e"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Surname:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="102" y="20" width="229" height="20" uuid="0765f0c0-6b8d-4609-95b7-0f4e3ec09b00"/>
+				<reportElement x="102" y="40" width="229" height="20" uuid="0765f0c0-6b8d-4609-95b7-0f4e3ec09b00"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramName}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="27" y="20" width="63" height="20" uuid="ffb59cf0-f7d2-49f4-9c00-ae515e41fb8f"/>
+				<reportElement x="27" y="40" width="63" height="20" uuid="ffb59cf0-f7d2-49f4-9c00-ae515e41fb8f"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="102" y="78" width="229" height="20" uuid="a00b940c-ceed-44c1-8b3d-c12264b77533"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{paramAge}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="27" y="78" width="63" height="20" uuid="5d132b2b-07a6-4103-9eee-d85365435d12"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Age:]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="447" y="542" width="78" height="20" uuid="b63ffbff-e82a-4a7d-986d-a48452d0c8b5"/>

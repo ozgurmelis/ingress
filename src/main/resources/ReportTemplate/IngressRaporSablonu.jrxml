@@ -119,7 +119,7 @@ ONAY FORMU]]></text>
 				</textElement>
 				<text><![CDATA[TÜRKİYE BİLİMSEL VE TEKNOLOJİK ARAŞTIRMA KURUMU (TÜBİTAK)’I INGRESS Projesi kapsamında biyometrik verim olan parmak izimi toplamak ve kullanmak hususunda yetkilendirdiğimi kabul ve taahhüt ederim. Alınan parmak izlerimin kullanım öncesinde anonim (isimsiz) hale getirileceği ve sonrasında yalnızca bilimsel araştırma amaçlı olarak kullanılacağı hususlarını kabul ederim.
 
-Tarafıma ait olan söz konusu biyometrik veriler yukarıda belirtilen projede mevcut diğer proje ortakları ile paylaşılabilecek ve Projenin sona ermesinden itibaren 1 (bir) yıllık süre sonunda imha edilecektir. Proje ortakları için toplanmış olan verinin kullanımı INGRESS Projesi ile ilgili araştırma faaliyetleri ile sınırlıdır.
+Tarafıma ait olan söz konusu biyometrik veriler yukarıda belirtilen projede mevcut diğer proje ortaklarınca ulaşılabilecek ve Projenin sona ermesinden itibaren 1 (bir) yıllık süre sonunda imha edilecektir. Proje ortakları için toplanmış olan verinin kullanımı INGRESS Projesi ile ilgili araştırma faaliyetleri ile sınırlıdır.
 
 Türkiye Cumhuriyeti Anayasası’ nın 20. Maddesi hükmü uyarınca, tarafıma ait biyometrik verilerin toplanması ve söz konusu verilerin INGRESS Projesi için TÜBITAK tarafından kullanımı hususunda tamamen bilgilendirilmiş olduğumu ve bu doğrultuda yapılacak işlemlere onay verdiğimi kabul, beyan ve taahhüt ederim.]]></text>
 			</staticText>
@@ -165,54 +165,33 @@ Türkiye Cumhuriyeti Anayasası’ nın 20. Maddesi hükmü uyarınca, tarafıma
 				</textElement>
 				<text><![CDATA[Ben, ]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="27" y="60" width="63" height="18" uuid="75ff5396-1342-4402-92ea-4b155dcc065f"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Cinsiyet:]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="103" y="40" width="229" height="20" uuid="8ff66330-97f5-4c16-87f9-1d35ef1dc548"/>
+				<reportElement x="103" y="60" width="229" height="20" uuid="8ff66330-97f5-4c16-87f9-1d35ef1dc548"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramSurname}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="27" y="40" width="63" height="20" uuid="8d19ee21-9077-48b7-b297-838d4f564bd8"/>
+				<reportElement x="27" y="60" width="63" height="20" uuid="8d19ee21-9077-48b7-b297-838d4f564bd8"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Soyad:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="103" y="20" width="229" height="20" uuid="d3a26a39-3d05-48e9-ad43-b100432a53be"/>
+				<reportElement x="103" y="40" width="229" height="20" uuid="d3a26a39-3d05-48e9-ad43-b100432a53be"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramName}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="27" y="20" width="63" height="20" uuid="c38cfec2-e412-4a2c-a6c2-770c49d1925f"/>
+				<reportElement x="27" y="40" width="63" height="20" uuid="c38cfec2-e412-4a2c-a6c2-770c49d1925f"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Ad:]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="103" y="78" width="229" height="20" uuid="cd3fa4a8-028b-49b4-bfca-6fb973166c96"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{paramAge}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="27" y="78" width="63" height="20" uuid="ddd2b3dc-273a-43c6-8b4a-50ec36faf0ab"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Yaş:]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="375" y="622" width="150" height="20" uuid="a180d4a5-57f9-4a02-8c99-5aed90ed583e"/>
@@ -220,13 +199,6 @@ Türkiye Cumhuriyeti Anayasası’ nın 20. Maddesi hükmü uyarınca, tarafıma
 					<font fontName="DejaVu Sans" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramDate}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="103" y="58" width="229" height="20" uuid="5e501d31-977d-4c0c-afc3-cdf540e8fe03"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{paramCinsiyet}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

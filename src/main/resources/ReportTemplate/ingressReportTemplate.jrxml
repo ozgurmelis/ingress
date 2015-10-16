@@ -146,61 +146,33 @@ INGRESS]]></text>
 				</textElement>
 				<text><![CDATA[I, the undersigned,]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="27" y="78" width="63" height="20" uuid="6583e8ca-564f-4c6c-b746-cbebd9521891"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Age:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="27" y="60" width="63" height="18" uuid="7afde7bf-cfda-4e3b-bd26-fbb7d03b524e"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Gender:]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="102" y="20" width="229" height="20" uuid="84a35fd0-27b6-4a27-b92a-53ce61aa6ef5"/>
+				<reportElement x="102" y="40" width="229" height="20" uuid="84a35fd0-27b6-4a27-b92a-53ce61aa6ef5"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramName}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="27" y="20" width="63" height="20" uuid="c1f473b2-0268-45c1-8c8c-e53b1a83ebed"/>
+				<reportElement x="27" y="40" width="63" height="20" uuid="c1f473b2-0268-45c1-8c8c-e53b1a83ebed"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="27" y="40" width="63" height="20" uuid="a8ed8de2-3512-48a9-83c4-691d5a1b7937"/>
+				<reportElement x="27" y="60" width="63" height="20" uuid="a8ed8de2-3512-48a9-83c4-691d5a1b7937"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Surname:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="102" y="40" width="229" height="20" uuid="07f0d3a5-cafd-4fc0-8c2f-e0ab9de8b3b5"/>
+				<reportElement x="102" y="60" width="229" height="20" uuid="07f0d3a5-cafd-4fc0-8c2f-e0ab9de8b3b5"/>
 				<textElement>
 					<font fontName="DejaVu Sans" size="12" pdfEncoding="Cp1254"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{paramSurname}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="102" y="60" width="229" height="20" uuid="16700789-f8b1-46e2-bab1-1ad936651daa"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{paramGender}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="102" y="78" width="229" height="20" uuid="0ab46cc9-579c-4b5a-8f69-d267c65008fb"/>
-				<textElement>
-					<font fontName="DejaVu Sans" size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{paramAge}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="310" y="622" width="41" height="20" uuid="92a2df0b-6fe1-428b-b053-81a11141a77a"/>
@@ -223,7 +195,7 @@ INGRESS]]></text>
 				</textElement>
 				<text><![CDATA[Authorize TÜRKİYE BİLİMSEL VE TEKNOLOJİK ARAŞTIRMA KURUMU (TÜBİTAK) to collect and use my FINGERPRINT data. The acquisitions of my FINGERPRINT will be anonymized before any exploitation then utilized exclusively for scientific research purposes.
 
-These data could be transferred to other partners participating to the above mentioned Project and will be destroyed at the end of the Project plus one year. Communication of these data to any third parties is prohibited. For the project partners, use of the collected data is strictly limited to research activities related to INGRESS Project.
+These data could be accessible by other partners participating to the above mentioned Project and will be destroyed at the end of the Project plus one year. Communication of these data to any third parties is prohibited. For the project partners, use of the collected data is strictly limited to research activities related to INGRESS Project.
 
 In accordance with Article 20 of the Constitution of Republic of Turkey, I hereby declare that I give my fully informed consent regarding the acquisition of my biometric data and I understand and consent the usage of said data by TÜBİTAK for INGRESS Project.]]></text>
 			</staticText>
