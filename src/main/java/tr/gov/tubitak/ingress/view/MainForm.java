@@ -68,6 +68,9 @@ public class MainForm extends JFrame {
     //Find Citizen
     private void button3ActionPerformed(ActionEvent e) {
         String ingressID = textField7.getText();
+        if(ingressID.contains("\"")){
+            ingressID = ingressID.substring(1,12);
+        }
         HashMap<String,String> values =  MainFormFacade.getCitizen(ingressID);
         if (values.containsKey("error")) {
             textField2.setText(values.get("error"));
@@ -87,6 +90,8 @@ public class MainForm extends JFrame {
                 radioButton6.setSelected(true);
             }
         }
+
+        MainFormFacade.openReport(ingressID,"TURKISH");
 
     }
 

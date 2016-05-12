@@ -55,7 +55,7 @@ public class CitizenService {
         Citizen citizen = null;
 
         List<Citizen> foundList = citizenDao.findByIngressID(ingressId);
-        if(null != foundList){
+        if(null != foundList && foundList.size()>0){
             citizen = foundList.get(0);
         }
 
